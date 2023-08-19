@@ -2,7 +2,7 @@
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 ###########- COLOR CODE -##############
-REPO="https://raw.githubusercontent.com/pusoxx/abc/main/"
+REPO="https://raw.githubusercontent.com/myvpn1/abc/main/"
 CYAN='\033[0;96m'        # Cyan
 
 BG="\E[44;1;39m"
@@ -21,11 +21,11 @@ echo -e "    •> Install UDP Server <•" | lolcat
 
 echo -e "      •> Fix Bug Script <•" | lolcat
 
-echo -e "     •> Script By @WokszXD <•" | lolcat
+echo -e "     •> Script By @KLMPK <•" | lolcat
 
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 
-echo -e "  ${BG} >>> THANKS TO WokszXD <<< ${NC}" 
+echo -e "  ${BG} >>> THANKS TO Andyyuda <<< ${NC}" 
 
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 
