@@ -1,15 +1,13 @@
-[Unit]
-Description=WebSocket
-After=syslog.target network-online.target
+# verbose level 0=info, 1=verbose, 2=very verbose
+verbose: 0
+listen:
 
-[Service]
-User=root
-NoNewPrivileges=true
-ExecStart=/usr/sbin/websocket -f /etc/websocket/tun.conf
-Restart=on-failure
-RestartPreventExitStatus=23
-LimitNPROC=10000
-LimitNOFILE=1000000
+# // SSH
+- target_host: 127.0.0.1
+  target_port: 22
+  listen_port: 10015
 
-[Install]
-WantedBy=multi-user.target
+# // OpenVPN 
+- target_host: 127.0.0.1
+  target_port: 1194
+  listen_port: 10012
