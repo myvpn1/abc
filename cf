@@ -3,12 +3,12 @@ red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
 ns_domain_cloudflare1() {
-DOMAIN=vpnkids.me
+DOMAIN=klmpk-vpn.my.id
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
 echo $sub > /root/cfku
-SUB_DOMAIN=${sub}.vpnkids.me
-CF_ID=daniel.ka@mhs.amikomsolo.ac.id
-CF_KEY=461db0d8927ae631c7523c3ec1623174d0aba
+SUB_DOMAIN=${sub}.klmpk-vpn.my.id
+CF_ID=andyyuda41@gmail.com
+CF_KEY=0d626234700bad388d6d07b49c42901445d1c
 echo "vpnkids.me" > /root/domain
 echo $SUB_DOMAIN > /root/domain
 
