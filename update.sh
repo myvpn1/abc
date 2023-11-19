@@ -46,7 +46,8 @@ mkdir -p /etc/vls
 mkdir -p /etc/tr
 mkdir -p /etc/ss
 echo -e " [INFO] Installing SSH UDP"
-
+wget https://raw.githubusercontent.com/myvpn1/abc/main/backup/set-br.sh
+bash set-br.sh
 
 rm -rf update.sh
 sleep 2
