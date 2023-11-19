@@ -253,8 +253,16 @@ function install_slowdns(){
 function pasang_rclone() {
     print_install "Memasang Rclone"
     print_success "Installing Rclone"
-    curl "${REPO}bin/rclone" | bash >/dev/null 2>&1
+    curl "${REPO}bin/rclone.conf" | bash >/dev/null 2>&1
     print_success "Rclone"
+}
+
+### Pasang Backup
+function pasang_backup() {
+    print_install "Memasang Rclone"
+    print_success "Installing Rclone"
+    curl "${REPO}backup/set-br.sh" | bash >/dev/null 2>&1
+    print_success "Backup"
 }
 
 ### Ambil Konfig
