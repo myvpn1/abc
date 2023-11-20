@@ -372,10 +372,7 @@ function tambahan(){
     # > Pasang Limit
     wget -qO /tmp/limit.sh "${REPO}limit/limit.sh" >/dev/null 2>&1
     chmod +x /tmp/limit.sh && bash /tmp/limit.sh >/dev/null 2>&1
-
-    # > Pasang backup  
-    wget https://raw.githubusercontent.com/myvpn1/abc/main/backup/set-br.sh
-bash set-br.sh
+    
 
     # > Pasang BBR Plus
     wget -qO /tmp/bbr.sh "${REPO}server/bbr.sh" >/dev/null 2>&1
