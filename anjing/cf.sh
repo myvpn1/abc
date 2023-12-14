@@ -1,10 +1,8 @@
 #!/bin/bash
 MYIP=$(wget -qO- icanhazip.com);
 apt install jq curl -y
-read -p "Masukan Domain (contoh : Dragon)" domen
 DOMAIN=mypremium.biz.id
-sub=${domen}
-#(</dev/urandom tr -dc a-z0-9 | head -c5)
+sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
 dns=${sub}.mypremium.biz.id
 CF_ID=andyyuda41@gmail.com
 CF_KEY=0d626234700bad388d6d07b49c42901445d1c
